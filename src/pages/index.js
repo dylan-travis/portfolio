@@ -5,9 +5,12 @@ import Button from '@mui/material/Button';
 import ButtonAppBar from "../components/AppBar";
 import ContentGrid from "../components/ContentGrid";
 import { StaticImage } from "gatsby-plugin-image"
-import { createTheme } from '@mui/material/styles';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import { Fade } from '@mui/material';
 import ContentGrid2 from "../components/ContentGrid2";
+import Drawer from "../components/Drawer";
+import { red } from '@mui/material/colors';
+import CssBaseline from '@mui/material/CssBaseline';
 
 
 const theme = createTheme({
@@ -16,11 +19,17 @@ const theme = createTheme({
   },
   palette: {
     primary: {
-      main: '#0971f1',
+      main: red[500],
       darker: '#053e85',
+      white: '#FFFFFF',
+      mode: 'dark',
     },
-    neutral: {
-      main: '#64748B',
+    secondary: {
+      main: '#FFFFFF',
+      contrastText: '#fff',
+    },
+    white: {
+      main: '#FFFFFF',
       contrastText: '#fff',
     },
   },
@@ -29,24 +38,26 @@ const theme = createTheme({
 
 const IndexPage = () => {
   return (
-    <Container fixed>
-      <ButtonAppBar />
-      <div>
-        <h1>Dylan Travis</h1>
-        <h2>Musician, Designer, Developer</h2>
-        <ContentGrid />
-        <StaticImage src="../images/bar.jpg" alt="" />
-      </div>
-      <div>
-        <h2>Projects</h2>
-        <ContentGrid2 />
-      </div>
-      <StaticImage src="../images/merm.jpg" alt="a skull" layout="constrained" />
-    </Container>
+    <ThemeProvider theme={theme}>
+      <Container fixed>
+        <ButtonAppBar />
+        <div>
+          <h1>Dylan Travis</h1>
+          <h2>Musician, Designer, Developer</h2>
+          <ContentGrid />
+          <StaticImage src="../images/bar.jpg" alt="" layout="fullWidth" />
+        </div>
+        <div>
+          <h2>Projects</h2>
+          <ContentGrid2 />
+        </div>
+        <StaticImage src="../images/merm.jpg" alt="a skull" layout="fullWidth" />
+      </Container>
+    </ThemeProvider>
   )
 }
 
 
 export default IndexPage
 
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Dylan Travis | Musician, Developer, Designer</title>

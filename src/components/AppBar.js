@@ -8,17 +8,20 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { black } from '@mui/material/colors';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
-import Drawer from '@mui/material/Drawer';
+import Drawer from './Drawer';
 
 
 
 const theme = createTheme({
     palette: {
         primary: {
-            light: '#212121',
+            light: '#FFFFF',
             main: '#212121',
             dark: '#002884',
             contrastText: '#fff',
+        },
+        secondary: {
+            main: '#FFFFFF',
         },
     },
 });
@@ -30,15 +33,7 @@ export default function ButtonAppBar() {
             <Box sx={{ flexGrow: 1 }}>
                 <AppBar position="static">
                     <Toolbar>
-                        <IconButton
-                            size="large"
-                            edge="start"
-                            color="inherit"
-                            aria-label="menu"
-                            sx={{ mr: 2 }}
-                        >
-                            <MenuIcon />
-                        </IconButton>
+                        <Drawer />
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         </Typography>
                         {/* <Button color="inherit">Login</Button> */}
