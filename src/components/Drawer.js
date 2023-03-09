@@ -12,6 +12,10 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from "gatsby";
+import downloadFile from '../../static/DylanTravisResume.pdf';
+
+
 
 export default function TemporaryDrawer() {
     const [state, setState] = React.useState({
@@ -20,6 +24,39 @@ export default function TemporaryDrawer() {
         bottom: false,
         right: false,
     });
+
+    const menuLinks = [
+        {
+            name: 'Home',
+            link: '/',
+            index: 1
+        }
+    ]
+
+    console.log(downloadFile)
+
+    const menuLinks2 = [
+        {
+            name: 'LinkedIn',
+            link: 'http://linkedin.com/in/dylantravis1',
+            index: 1
+        },
+        {
+            name: 'GitHub',
+            link: 'http://github.com/chemicalpleasures',
+            index: 2
+        },
+        {
+            name: 'Email',
+            link: 'mailto:dylantravis99@gmail.com',
+            index: 3
+        },
+        {
+            name: 'Resume',
+            link: downloadFile,
+            index: 4
+        },
+    ]
 
     const toggleDrawer = (anchor, open) => (event) => {
         if (event.type === 'keydown' && (event.key === 'Tab' || event.key === 'Shift')) {
@@ -37,26 +74,26 @@ export default function TemporaryDrawer() {
             onKeyDown={toggleDrawer(anchor, false)}
         >
             <List>
-                {['Portfolio', 'About Me', 'CV', 'Resume'].map((text, index) => (
-                    <ListItem key={text} disablePadding>
+                {menuLinks.map(links => (
+                    <ListItem key={links.index} disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                                {links.index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                             </ListItemIcon>
-                            <ListItemText primary={text} />
+                            <Link to={links.link}><ListItemText primary={links.name} /></Link>
                         </ListItemButton>
                     </ListItem>
                 ))}
             </List>
             <Divider />
             <List>
-                {['Email'].map((text, index) => (
-                    <ListItem key={text} disablePadding>
+                {menuLinks2.map(links2 => (
+                    <ListItem key={links2.name} disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                                {links2.index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
                             </ListItemIcon>
-                            <ListItemText primary={text} />
+                            <a href={links2.link}><ListItemText primary={links2.name} /></a>
                         </ListItemButton>
                     </ListItem>
                 ))}

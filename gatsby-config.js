@@ -4,6 +4,20 @@
 module.exports = {
   siteMetadata: {
     title: `Dylan Travis - Portfolio`,
+    menuLinks: [
+      {
+        name: 'Home',
+        link: '/',
+      },
+      {
+        name: 'About Me',
+        link: '/about',
+      },
+      {
+        name: 'Resume',
+        link: '/resume',
+      }
+    ],
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {

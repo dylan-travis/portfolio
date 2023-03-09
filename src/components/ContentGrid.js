@@ -6,7 +6,8 @@ export default function ContentGrid() {
     return (
         <Grid container>
             <Grid item>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p>Hi, I'm Dylan. I am a musician, visual artist, and developer with over 10 years of experience in ecommerce. I have worn most hats that are available in the ecommerce space - I have built businesses from the ground up, refined systems for existing businesses, and everything in between. I am a full-stack web developer working in React, Node, Python, and various frameworks. I am also very experienced with ecommerce management systems such as ChannelAdvisor, Salsify, Shopify, and more. <a href='mailto:dylantravis99@gmail.com'>Please feel free to reach out!</a>
+                </p>
             </Grid>
         </Grid>
     )

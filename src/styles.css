@@ -6,3 +6,21 @@ h1 {
     font-family: "Crimson Text";
     font-size: 8vw;
   }
+
+  a {
+    color: hotpink;
+    text-decoration: none;
+
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+  }
+
+  .dylanText {
+    color:#1a1a1a;
+  }
