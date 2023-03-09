@@ -6,10 +6,10 @@ import { StaticImage } from "gatsby-plugin-image"
 export default function ContentGrid2() {
     return (
         <Grid container>
-            <Grid item xs={4}>
+            <Grid item xs={12} md={4}>
                 <StaticImage src="../images/candle.png" alt="a skull" layout="constrained" />
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} md={8}>
                 <h3>Candle</h3>
                 <a href="http://www.candlemerch.com">candlemerch.com</a>
                 <p>Music merch ecommerce site built on a customized Shopify theme with ChannelAdvisor inventory management. Designed from the ground up with custom print-to-order, fulfillment, and automated payout systems.</p>
@@ -22,18 +22,18 @@ export default function ContentGrid2() {
             <Grid item xs={4}>
                 <StaticImage src="../images/lilman.jpg" alt="a skull" layout="constrained" />
             </Grid> */}
-            <Grid item xs={4}>
+            <Grid item xs={12} md={4}>
                 <StaticImage src="../images/crc2.png" alt="crc logo" layout="constrained" />
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} md={8}>
                 <h3>California Republic Clothes</h3>
                 <a href="http://www.californiarepublicclothes.com">californiarepublicclothes.com</a>
                 <p>Clothing brand site built on a customized Shopify theme with ChannelAdvisor inventory management. Designed from the ground up with custom print-to-order, fulfillment, and automated payout systems.</p>
             </Grid>
-            <Grid item xs={4}>
+            <Grid item xs={12} md={4}>
                 <StaticImage src="../images/jsco.PNG" alt="a skull" layout="constrained" />
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} md={8}>
                 <h3>jis.co</h3>
                 <a href="http://jisco.biz">jisco.biz</a>
                 <p>Clothing brand site built on a customized Shopify theme with ChannelAdvisor inventory management. Designed from the ground up with custom print-to-order, fulfillment, and automated payout systems.</p>
