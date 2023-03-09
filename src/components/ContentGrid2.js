@@ -31,7 +31,7 @@ export default function ContentGrid2() {
                 <p>Clothing brand site built on a customized Shopify theme with ChannelAdvisor inventory management. Designed from the ground up with custom print-to-order, fulfillment, and automated payout systems.</p>
             </Grid>
             <Grid item xs={4}>
-                <StaticImage src="../images/jsco.png" alt="a skull" layout="constrained" />
+                <StaticImage src="../images/jsco.PNG" alt="a skull" layout="constrained" />
             </Grid>
             <Grid item xs={8}>
                 <h3>jis.co</h3>
