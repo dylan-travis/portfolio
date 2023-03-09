@@ -17,7 +17,7 @@ export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
   setHeadComponents([
     <link
       rel="stylesheet"
-      href="/style.css"
+      href="../styles.css"
     />
   ]),
     setPostBodyComponents([

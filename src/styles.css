@@ -22,7 +22,16 @@ h1 {
   }
 
   .dylanText {
+    color:#ffffff;
+    mix-blend-mode: difference;
+  }
+
+  .bottom {
     color:#1a1a1a;
+    font-size: .7vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   @media only screen and (max-width: 650px){
@@ -30,3 +39,4 @@ h1 {
       font-size: 16vw;
     }
   }
+

@@ -7,8 +7,11 @@ import Divider from '@mui/material/Divider';
 import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import HomeIcon from '@mui/icons-material/Home';
 import ListItemText from '@mui/material/ListItemText';
-import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -29,32 +32,35 @@ export default function TemporaryDrawer() {
         {
             name: 'Home',
             link: '/',
-            index: 1
+            index: 1,
+            icon: 'HomeIcon'
         }
     ]
-
-    console.log(downloadFile)
 
     const menuLinks2 = [
         {
             name: 'LinkedIn',
             link: 'http://linkedin.com/in/dylantravis1',
-            index: 1
+            index: 1,
+            icon: 'LinkedInIcon'
         },
         {
             name: 'GitHub',
             link: 'http://github.com/chemicalpleasures',
-            index: 2
+            index: 2,
+            icon: 'GitHubIcon'
         },
         {
             name: 'Email',
             link: 'mailto:dylantravis99@gmail.com',
-            index: 3
+            index: 3,
+            icon: 'MailIcon'
         },
         {
             name: 'Resume',
             link: downloadFile,
-            index: 4
+            index: 4,
+            icon: 'PictureAsPdfIcon'
         },
     ]
 
@@ -78,7 +84,7 @@ export default function TemporaryDrawer() {
                     <ListItem key={links.index} disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                {links.index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                                <HomeIcon />
                             </ListItemIcon>
                             <Link to={links.link}><ListItemText primary={links.name} /></Link>
                         </ListItemButton>
@@ -91,7 +97,11 @@ export default function TemporaryDrawer() {
                     <ListItem key={links2.name} disablePadding>
                         <ListItemButton>
                             <ListItemIcon>
-                                {links2.index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
+                                {links2.icon === 'GitHubIcon' ? <GitHubIcon />
+                                :links2.icon === 'LinkedInIcon' ? <LinkedInIcon />
+                                :links2.icon === 'MailIcon' ? <MailIcon />
+                                :<PictureAsPdfIcon />
+                            }
                             </ListItemIcon>
                             <a href={links2.link}><ListItemText primary={links2.name} /></a>
                         </ListItemButton>

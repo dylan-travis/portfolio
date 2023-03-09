@@ -7,7 +7,6 @@ import { StaticImage } from "gatsby-plugin-image"
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import ContentGrid2 from "../components/ContentGrid2";
 import { red } from '@mui/material/colors';
-import TOPOLOGY from 'vanta/dist/vanta.topology.min'
 import VantaContainer from "../components/VantaContainer";
 
 
@@ -49,12 +48,13 @@ const IndexPage = () => {
           <ContentGrid2 />
         </div>
         <StaticImage src="../images/merm.jpg" alt="a skull" layout="fullWidth" />
+        <p className="bottom">Illustrations courtesy the British Library.</p>
       </Container>
-    </ThemeProvider>
+    </ThemeProvider >
   )
 }
 
 
 export default IndexPage
 
-export const Head = () => <title>Dylan Travis | Musician, Developer, Designer</title>
+export const Head = () => <title>Dylan Travis | Musician, Designer, Developer</title>
