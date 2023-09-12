@@ -7,6 +7,14 @@ export default function ContentGrid2() {
     return (
         <Grid container>
             <Grid item xs={12} md={4}>
+                <StaticImage src="../images/voidcircle.png" alt="void circle" layout="constrained" />
+            </Grid>
+            <Grid item xs={12} md={8}>
+                <h3>Voidspace</h3>
+                <a href="http://voidspace.vercel.app">voidspace.vercel.app</a>
+                <p>Hourly studio booking app built with NextJS, Tailwind, MongoDB, Stripe.</p>
+            </Grid>
+            <Grid item xs={12} md={4}>
                 <StaticImage src="../images/candle.png" alt="a skull" layout="constrained" />
             </Grid>
             <Grid item xs={12} md={8}>
@@ -14,14 +22,6 @@ export default function ContentGrid2() {
                 <a href="http://www.candlemerch.com">candlemerch.com</a>
                 <p>Music merch ecommerce site with a focus on providing print-to-order solutions for independent artists. Designed from the ground up with custom print-to-order, fulfillment, and automated payout systems.</p>
             </Grid>
-            {/* <Grid item xs={8}>
-                <h3>Some Ember</h3>
-                <a href="http://debtsof.love">debtsof.love</a>
-                <p>Self-produced synthpop/darkwave project. Instruments: Human voice, Ableton Live, Akai MPC Live, Ensoniq ESQ-1, Arp AXXE, DSI Prophet '08, Moog Slim Phatty, Elektron Octatrack, Korg DW-8000, guitars.</p>
-            </Grid>
-            <Grid item xs={4}>
-                <StaticImage src="../images/lilman.jpg" alt="a skull" layout="constrained" />
-            </Grid> */}
             <Grid item xs={12} md={4}>
                 <StaticImage src="../images/crc2.png" alt="crc logo" layout="constrained" />
             </Grid>

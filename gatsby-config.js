@@ -18,7 +18,7 @@ module.exports = {
         link: '/resume',
       }
     ],
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.dylantravis.net`
   },
   plugins: ["gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-mdx", "gatsby-plugin-sharp", "gatsby-transformer-sharp", {
     resolve: 'gatsby-source-filesystem',
