@@ -39,13 +39,17 @@ const IndexPage = () => {
         <ButtonAppBar />
         <VantaContainer />
         <div>
-          <h2>Musician, Designer, Developer</h2>
+          <h2>Software Engineer | Data Engineer | Integration Specialist</h2>
           <ContentGrid />
           <StaticImage src="../images/bar.jpg" alt="" layout="fullWidth" />
         </div>
         <div>
           <h1>Projects</h1>
           <ContentGrid2 />
+        </div>
+        <div>
+        <h2>Certifications</h2>
+        <a href="https://www.credly.com/badges/4980e7c1-016d-43d4-82f5-108c38abbcd5/public_url"><StaticImage src="../images/cloud-digital-leader-certification.png" alt="gcp digital leader cert" layout="constrained" /></a>
         </div>
         <StaticImage src="../images/merm.jpg" alt="a skull" layout="fullWidth" />
         <p className="bottom">Illustrations courtesy the British Library.</p>
