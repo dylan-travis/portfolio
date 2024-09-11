@@ -46,7 +46,7 @@ export default function TemporaryDrawer() {
         },
         {
             name: 'GitHub',
-            link: 'http://github.com/chemicalpleasures',
+            link: 'http://github.com/dylan-travis',
             index: 2,
             icon: 'GitHubIcon'
         },
