@@ -20,6 +20,7 @@
     "@mdx-js/react": "^2.2.1",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.6",
+    "dylan-travis-portfolio": "file:",
     "gatsby": "^5.4.2",
     "gatsby-omni-font-loader": "^2.0.2",
     "gatsby-plugin-image": "^3.5.0",
